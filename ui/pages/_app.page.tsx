@@ -1,5 +1,4 @@
-import axios from 'axios'
-import Coins from '../components/Coins'
+
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
@@ -17,17 +16,6 @@ import {
 let transactionFee = 0.1;
 
 export default function App() {
-	
-	const [coins, setCoins] = useState([])
-	const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false'
-	useEffect(() => {
-		axios.get(url).then((response) => {
-			setCoins(response.data)
-			console.log(response.data[0])
-		}).catch((error) => {
-			console.log(error)
-		})
-	}, [])
 
   let [state, setState] = useState({
     zkappWorkerClient: null as null | ZkappWorkerClient,
@@ -515,7 +503,6 @@ export default function App() {
 	<footer className={styles.footer}>
 		</footer>
 		
-		<Coins coins={coins} />
 	
 	</div>
   );
