@@ -263,7 +263,7 @@ var __dirname = "/";
 /******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	!function() {
-/******/ 		__webpack_require__.p = "/04-zkapp-browser-ui//_next/";
+/******/ 		__webpack_require__.p = "/appbuild//_next/";
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/importScripts chunk loading */
