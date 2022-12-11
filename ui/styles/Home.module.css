@@ -27,7 +27,7 @@
 	margin-right: auto;
 	background-image: url("../images/title.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 400px;
 	height: 220px;
 	left: 480px;
@@ -44,7 +44,7 @@
 	margin-right: auto;
 	background-image: url("../images/kiri.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 240px;
 	height: 215px;
 	left: 10px;
@@ -61,7 +61,7 @@
 	margin-right: auto;
 	background-image: url("../images/kanan.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 240px;
 	height: 215px;
 	left: 1100px;
@@ -78,7 +78,7 @@
 	margin-right: auto;
 	background-image: url("../images/gantung.gif");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 140px;
 	height: 140px;
 	left: 780px;
@@ -95,7 +95,7 @@
 	margin-right: auto;
 	background-image: url("../images/fly.gif");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 160px;
 	height: 320px;
 	left: 100px;
@@ -112,7 +112,7 @@
 	margin-right: auto;
 	background-image: url("../images/ijo.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 160px;
 	height: 180px;
 	left: 1080px;
@@ -129,7 +129,7 @@
 	margin-right: auto;
 	background-image: url("../images/walk.gif");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 160px;
 	height: 40px;
 	left: 610px;
@@ -146,7 +146,7 @@
 	margin-right: auto;
 	background-image: url("../images/connect.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 160px;
 	height: 70px;
 	left: 610px;
@@ -163,7 +163,7 @@
 	margin-right: auto;
 	background-image: url("../images/connect2.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 160px;
 	height: 70px;
 	left: 610px;
@@ -180,7 +180,7 @@
 	margin-right: auto;
 	background-image: url("../images/connectOff.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 160px;
 	height: 70px;
 	left: 610px;
@@ -197,7 +197,7 @@
 	margin-right: auto;
 	background-image: url("../images/connected.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 160px;
 	height: 70px;
 	left: 610px;
@@ -214,7 +214,7 @@
 	margin-right: auto;
 	background-image: url("../images/connect.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 120px;
 	height: 50px;
 	left: 1200px;
@@ -231,7 +231,7 @@
 	margin-right: auto;
 	background-image: url("../images/connect2.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 120px;
 	height: 50px;
 	left: 1200px;
@@ -248,7 +248,7 @@
 	margin-right: auto;
 	background-image: url("../images/connectOff.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 120px;
 	height: 50px;
 	left: 1200px;
@@ -265,14 +265,14 @@
 	margin-right: auto;
 	background-image: url("../images/connected.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 120px;
 	height: 50px;
 	left: 1200px;
 	top: 10px;
 }
 
-.hometop {
+.faucettop {
 	display: block;
 	display: flex;
 	background-size: cover;
@@ -280,16 +280,16 @@
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url("../images/home.png");
+	background-image: url("../images/faucet.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 910px;
+	left: 1050px;
 	top: 5px;
 }
 
-.hometop:hover {
+.faucettop:hover {
 	display: block;
 	display: flex;
 	background-size: cover;
@@ -297,29 +297,12 @@
 	justify-content: center;
 	margin-left: auto;
 	margin-right: auto;
-	background-image: url("../images/home2.png");
+	background-image: url("../images/faucet2.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 910px;
-	top: 5px;
-}
-
-.hometopOff {
-	display: block;
-	display: flex;
-	background-size: cover;
-	align-items: center;
-	justify-content: center;
-	margin-left: auto;
-	margin-right: auto;
-	background-image: url("../images/home3.png");
-	background-repeat: no-repeat;
-	position: fixed;
-	width: 140px;
-	height: 60px;
-	left: 910px;
+	left: 1050px;
 	top: 5px;
 }
 
@@ -333,10 +316,10 @@
 	margin-right: auto;
 	background-image: url("../images/send.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 1050px;
+	left: 910px;
 	top: 5px;
 }
 
@@ -350,10 +333,10 @@
 	margin-right: auto;
 	background-image: url("../images/send2.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 1050px;
+	left: 910px;
 	top: 5px;
 }
 
@@ -367,10 +350,61 @@
 	margin-right: auto;
 	background-image: url("../images/send3.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 1050px;
+	left: 910px;
+	top: 5px;
+}
+
+.hometop {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/home.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 140px;
+	height: 60px;
+	left: 770px;
+	top: 5px;
+}
+
+.hometop:hover {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/home2.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 140px;
+	height: 60px;
+	left: 770px;
+	top: 5px;
+}
+
+.hometopOff {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/home3.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 140px;
+	height: 60px;
+	left: 770px;
 	top: 5px;
 }
 
@@ -384,7 +418,7 @@
 	margin-right: auto;
 	background-image: url("../images/sendscreen.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 430px;
 	height: 430px;
 	left: 470px;
@@ -401,7 +435,7 @@
 	margin-right: auto;
 	background-image: url("../images/head.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 110px;
 	height: 70px;
 	left: 10px;
@@ -418,7 +452,7 @@
 	margin-right: auto;
 	background-image: url("../images/head2.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 110px;
 	height: 70px;
 	left: 10px;
@@ -435,7 +469,7 @@
 	margin-right: auto;
 	background-image: url("../images/fb.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 80px;
 	left: 500px;
@@ -452,7 +486,7 @@
 	margin-right: auto;
 	background-image: url("../images/fb2.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 80px;
 	left: 500px;
@@ -469,7 +503,7 @@
 	margin-right: auto;
 	background-image: url("../images/dc.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 80px;
 	left: 600px;
@@ -486,7 +520,7 @@
 	margin-right: auto;
 	background-image: url("../images/dc2.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 80px;
 	left: 600px;
@@ -503,7 +537,7 @@
 	margin-right: auto;
 	background-image: url("../images/github.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 80px;
 	left: 700px;
@@ -520,7 +554,7 @@
 	margin-right: auto;
 	background-image: url("../images/github2.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 80px;
 	left: 700px;
@@ -537,7 +571,7 @@
 	margin-right: auto;
 	background-image: url("../images/tele.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 80px;
 	left: 800px;
@@ -554,7 +588,7 @@
 	margin-right: auto;
 	background-image: url("../images/tele2.png");
 	background-repeat: no-repeat;
-	position: fixed;
+	position: absolute;
 	width: 80px;
 	height: 80px;
 	left: 800px;
@@ -1088,10 +1122,382 @@
 	top: 305px;
 }
 
+.feetxt {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/fee.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 180px;
+	height: 25px;
+	left: 520px;
+	top: 160px;
+}
+
+.inputfee {
+	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	border: 2px solid black;
+	background-color: lightblue;
+	color: black;
+	width: 320px;
+	left: 530px;
+	top: 190px;
+}
+
+.memotxt {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/memo.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 180px;
+	height: 25px;
+	left: 530px;
+	top: 220px;
+}
+
+.inputmemo {
+	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	border: 2px solid black;
+	background-color: lightblue;
+	color: black;
+	width: 320px;
+	left: 530px;
+	top: 250px;
+}
+
+.submitsend {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/submitsend.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 120px;
+	height: 35px;
+	left: 630px;
+	top: 450px;
+}
+
+.submitsend:hover {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/submitsend2.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 120px;
+	height: 35px;
+	left: 630px;
+	top: 450px;
+}
+
+.submitsendOff {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/submitsendOff.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 120px;
+	height: 35px;
+	left: 630px;
+	top: 450px;
+}
+
+.send1txt {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/sendtxt1.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 180px;
+	height: 20px;
+	left: 600px;
+	top: 285px;
+}
+
+.send1load {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/loadsend.gif");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 555px;
+	top: 278px;
+}
+
+.send1v {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/checklist.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 563px;
+	top: 285px;
+}
+
+.send2txt {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/sendtxt2.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 180px;
+	height: 20px;
+	left: 600px;
+	top: 310px;
+}
+
+.send2load {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/loadsend.gif");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 555px;
+	top: 303px;
+}
+
+.send2v {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/checklist.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 563px;
+	top: 310px;
+}
+
+.send3txt {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/sendtxt3.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 180px;
+	height: 20px;
+	left: 600px;
+	top: 335px;
+}
+
+.send3load {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/loadsend.gif");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 555px;
+	top: 328px;
+}
+
+.send3v {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/checklist.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 563px;
+	top: 335px;
+}
+
+.send4txt {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/sendtxt4.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 180px;
+	height: 20px;
+	left: 600px;
+	top: 360px;
+}
+
+.send4load {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/loadsend.gif");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 555px;
+	top: 353px;
+}
+
+.send4v {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/checklist.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 563px;
+	top: 360px;
+}
+
+.send5txt {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/sendtxt5.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 180px;
+	height: 20px;
+	left: 600px;
+	top: 385px;
+}
+
+.send5v {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/checklist.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 563px;
+	top: 385px;
+}
+
+.detailsend {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/senddetail.gif");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 180px;
+	height: 20px;
+	left: 600px;
+	top: 415px;
+}
+
 @font-face { font-family: font1; src: url("../styles/font1.ttf"); } 
 .addres {
 	display: block;
-	position: fixed;
+	position: absolute;
     font-family: font1;
 	font-size: 13px;
 	color: #D8D8D8;
