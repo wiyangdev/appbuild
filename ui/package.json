@@ -2,6 +2,7 @@
   "name": "ui",
   "version": "0.1.0",
   "private": true,
+  "proxy": "assets.coingecko.com/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -15,15 +16,24 @@
     "@types/node": "18.11.10",
     "@types/react": "18.0.26",
     "@types/react-dom": "18.0.9",
+    "axios": "^1.2.1",
     "bootstrap": "^5.2.3",
+    "cheerio": "^1.0.0-rc.12",
     "coi-serviceworker": "^0.1.6",
+    "coingecko-api": "^1.0.10",
+    "cors": "^2.8.5",
     "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
+    "express": "^4.18.2",
     "next": "13.0.6",
     "react": "18.2.0",
     "react-bootstrap": "^2.6.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
     "snarkyjs": "0.*",
     "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.6"
   }
 }

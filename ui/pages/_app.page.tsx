@@ -1,4 +1,4 @@
-
+import CoinPrice from '../components/CoinPrice'
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Home.module.css';
@@ -13,8 +13,9 @@ import {
   Field,
 } from 'snarkyjs'
 
-let transactionFee = 0.1;
+let transactionFee = '';
 let transactionMemo = '';
+let isConnect = false;
 
 export default function App() {
 
@@ -43,6 +44,22 @@ export default function App() {
 	el4.style.display = "none";
 	const el5 = document.getElementById("connectOff2")!
 	el5.style.display = "block";
+	const el6 = document.getElementById("faucettop")!
+	el6.style.display = "none";
+	const el7 = document.getElementById("faucettopOff")!
+	el7.style.display = "block";
+	const el8 = document.getElementById("pricetop")!
+	el8.style.display = "none";
+	const el9 = document.getElementById("pricetopOff")!
+	el9.style.display = "block";
+	const el10 = document.getElementById("marketprice")!
+	el10.style.display = "none";
+	const el11 = document.getElementById("hometop")!
+	el11.style.display = "none";
+	const el12 = document.getElementById("hometopOff")!
+	el12.style.display = "block";
+	const el13 = document.getElementById("homepage")!
+	el13.style.display = "block";
   }
   
    const load1 = () => {
@@ -126,6 +143,15 @@ export default function App() {
 	el16.style.display = "none";
 	const el17 = document.getElementById("sendtop")!
 	el17.style.display = "block";
+	const el18 = document.getElementById("pricetopOff")!
+	el18.style.display = "none";
+	const el19 = document.getElementById("pricetop")!
+	el19.style.display = "block";
+	const el20 = document.getElementById("faucettop")!
+	el20.style.display = "block";
+	const el21 = document.getElementById("faucettopOff")!
+	el21.style.display = "none";
+	isConnect = true;
   }
   
    const connectclose = () => {
@@ -175,6 +201,14 @@ export default function App() {
 	el13.style.display = "none";
 	const el14 = document.getElementById("connectOff2")!
 	el14.style.display = "block";
+	const el15 = document.getElementById("pricetop")!
+	el15.style.display = "none";
+	const el16 = document.getElementById("faucettop")!
+	el16.style.display = "none";
+	const el17 = document.getElementById("pricetopOff")!
+	el17.style.display = "block";
+	const el18 = document.getElementById("faucettopOff")!
+	el18.style.display = "block";
   }
  
   const homemenu = () => {
@@ -186,11 +220,24 @@ export default function App() {
 	el3.style.display = "none";
 	const el4 = document.getElementById("hometopOff")!
 	el4.style.display = "block";
-	const el5 = document.getElementById("sendtop")!
-	el5.style.display = "block";
-	const el6 = document.getElementById("sendtopOff")!
-	el6.style.display = "none";
-
+		if (isConnect == false) {
+			const el5 = document.getElementById("sendtop")!
+			el5.style.display = "none";
+			const el6 = document.getElementById("sendtopOff")!
+			el6.style.display = "block";
+		} else {
+			const el7 = document.getElementById("sendtop")!
+			el7.style.display = "block";
+			const el8 = document.getElementById("sendtopOff")!
+			el8.style.display = "none";
+		}
+		
+	const el9 = document.getElementById("marketprice")!
+	el9.style.display = "none";
+	const el10 = document.getElementById("pricetop")!
+	el10.style.display = "block";
+	const el11 = document.getElementById("pricetopOff")!
+	el11.style.display = "none";
   }
   
   const sendmenu = () => {
@@ -208,26 +255,63 @@ export default function App() {
 	el6.style.display = "block";
 	const el7 = document.getElementById("sendtop")!
 	el7.style.display = "none";
+	const el8 = document.getElementById("marketprice")!
+	el8.style.display = "none";
+	const el9 = document.getElementById("pricetop")!
+	el9.style.display = "block";
+	const el10 = document.getElementById("pricetopOff")!
+	el10.style.display = "none";
   }
   
-  const inputsend = () => {
-  var memoInput = document.getElementById("memosend").value;
+  const pricemenu = () => {
+	const el = document.getElementById("marketprice")!
+	el.style.display = "block";
+	const el2 = document.getElementById("pricetop")!
+	el2.style.display = "none";
+	const el3 = document.getElementById("pricetopOff")!
+	el3.style.display = "block";
+	const el4 = document.getElementById("sendscreen")!
+	el4.style.display = "none";
+	const el5 = document.getElementById("homepage")!
+	el5.style.display = "none";
+	const el6 = document.getElementById("hometop")!
+	el6.style.display = "block";
+	const el7 = document.getElementById("hometopOff")!
+	el7.style.display = "none";
+		if (isConnect == false) {
+			const el8 = document.getElementById("sendtop")!
+			el8.style.display = "none";
+			const el9 = document.getElementById("sendtopOff")!
+			el9.style.display = "block";
+		} else {
+			const el10 = document.getElementById("sendtop")!
+			el10.style.display = "block";
+			const el11 = document.getElementById("sendtopOff")!
+			el11.style.display = "none";
+		}
+  }
+  
+  const inputfee = () => {
+  const memoele = document.getElementById("memosend") as HTMLInputElement;
+  const memoInput = memoele.value;
   	if (memoInput == "") {
 		transactionMemo = '';
 		return false;
 	}
   transactionMemo = memoInput;
+  }
   
-  var feeInput = document.getElementById("feesend").value;
+  const inputmemo = () => {
+  const feeele = document.getElementById("feesend") as HTMLInputElement;
+  const feeInput = feeele.value;
 	if (feeInput == "") {
-		transactionFee = 0.1;
+		transactionFee = "0.1";
 		return false;
 	}
   transactionFee = feeInput;
-
   }
   
-  const blockInvalidChar = e => ['e', 'E', '+', '-'].includes(e.key) && e.preventDefault();
+  const blockInvalidChar = (e:any) => ['e', 'E', '+', '-'].includes(e.key) && e.preventDefault();
   const [value, setValue] = useState("");
  
   const clearsendtxt = () => {
@@ -265,6 +349,25 @@ export default function App() {
 	el16.style.display = "none";
 	const el17 = document.getElementById("submitsendOff")!
 	el17.style.display = "block";
+	const el18 = (document.getElementById("feesend") as any)!
+	el18.disabled = true;
+	const el19 = (document.getElementById("memosend") as any)!
+	el19.disabled = true;
+  }
+  
+  const sendfunction = () => {
+	const el = document.getElementById("hometop")!
+	el.style.display = "none";
+	const el2 = document.getElementById("hometopOff")!
+	el2.style.display = "block";
+	const el3 = document.getElementById("pricetop")!
+	el3.style.display = "none";
+	const el4 = document.getElementById("pricetopOff")!
+	el4.style.display = "block";
+	const el5 = document.getElementById("faucettop")!
+	el5.style.display = "none";
+	const el6 = document.getElementById("faucettopOff")!
+	el6.style.display = "block";
   }
   
   const sendtxt1 = () => {
@@ -322,6 +425,22 @@ export default function App() {
 	el6.style.display = "none";
 	const el7 = document.getElementById("submitsend")!
 	el7.style.display = "block";
+	const el8 = (document.getElementById("feesend") as any)!
+	el8.disabled = false;
+	const el9 = (document.getElementById("memosend") as any)!
+	el9.disabled = false;
+	const el10 = document.getElementById("hometop")!
+	el10.style.display = "block";
+	const el11 = document.getElementById("hometopOff")!
+	el11.style.display = "none";
+	const el12 = document.getElementById("pricetop")!
+	el12.style.display = "block";
+	const el13 = document.getElementById("pricetopOff")!
+	el13.style.display = "none";
+	const el14 = document.getElementById("faucettop")!
+	el14.style.display = "block";
+	const el15 = document.getElementById("faucettopOff")!
+	el15.style.display = "none";
   }
 
 
@@ -431,7 +550,8 @@ export default function App() {
 	
 	const txHash = "https://berkeley.minaexplorer.com/transaction/" + hash ;
 	//console.log(txHash);
-	document.getElementById("detailsend").href = "" + txHash ;
+
+	(document.getElementById("detailsend") as any).href = "" + txHash ;
 	
 	sendtxt5();
 
@@ -514,6 +634,14 @@ export default function App() {
 				<span className={styles.faucettop}></span>
 			</a>
 			
+				<span id="faucettopOff" style={{display: 'none'}} className={styles.faucettopOff}> </span>
+			
+			<a id="pricetop" style={{display: 'block'}} onClick={() => {pricemenu(); }}>
+				<span className={styles.pricetop}></span>
+			</a>
+			
+				<span id="pricetopOff" style={{display: 'none'}} className={styles.pricetopOff}> </span>
+			
 			<a id="sendtop" style={{display: 'none'}} onClick={() => {sendmenu(); }}>
 					<span className={styles.send}> </span>
 			</a>
@@ -547,10 +675,9 @@ export default function App() {
 			
 			<div id="sendscreen" style={{display: 'none'}}>
 			
-
 				<span className={styles.sendscreen}> </span>
 				<span className={styles.feetxt}> </span>
-				<input id="feesend" className={styles.inputfee} type="number" placeholder="Fee Transaction (default: 0.1)" value={value} onKeyDown={blockInvalidChar} onChange={({ target: { value } }) => { setValue(value); }} />
+				<input id="feesend" className={styles.inputfee} min="0.1" type="number" placeholder="Fee Transaction (default: 0.1)" value={value} onKeyDown={blockInvalidChar} onChange={({ target: { value } }) => { setValue(value); }} />
 				<span className={styles.memotxt}> </span>
 				<input id="memosend" className={styles.inputmemo} type="text" placeholder="Memo Transaction" />
 				
@@ -577,7 +704,7 @@ export default function App() {
 					<span className={styles.detailsend}> </span>
 				</a>
 					
-				<a id="submitsend" style={{display: 'block'}} onClick={() => {inputsend(); clearsendtxt(); onSendTransaction(); }}>
+				<a id="submitsend" style={{display: 'block'}} onClick={() => {sendfunction(); clearsendtxt(); onSendTransaction(); inputfee(); inputmemo(); }}>
 					<span className={styles.submitsend}> </span>
 				</a>
 				<span id="submitsendOff" style={{display: 'none'}} className={styles.submitsendOff}> </span>
@@ -649,10 +776,12 @@ export default function App() {
 				<span id="nofundtxt" style={{display: 'none'}} className={styles.nofundtxt}> </span>
 				{accountDoesNotExist}
 				
+
 			</div>
 			
-			
-			
+			<div id="marketprice" style={{display: 'none'}} className={styles.marketprice}>
+			 <CoinPrice />
+			</div>
 		</main>
 		
 	<footer className={styles.footer}>

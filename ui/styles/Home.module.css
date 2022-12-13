@@ -31,7 +31,7 @@
 	width: 400px;
 	height: 220px;
 	left: 480px;
-	top: 55px;	
+	top: 75px;	
 }
 
 .kiri {
@@ -48,7 +48,7 @@
 	width: 240px;
 	height: 215px;
 	left: 10px;
-	top: 415px;	
+	bottom: 15px;
 }
 
 .kanan {
@@ -65,7 +65,7 @@
 	width: 240px;
 	height: 215px;
 	left: 1100px;
-	top: 415px;
+	bottom: 15px;
 }
 
 .gantung {
@@ -82,7 +82,7 @@
 	width: 140px;
 	height: 140px;
 	left: 780px;
-	top: 130px;
+	top: 150px;
 }
 
 .fly {
@@ -306,6 +306,74 @@
 	top: 5px;
 }
 
+.faucettopOff {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/faucet3.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 140px;
+	height: 60px;
+	left: 1050px;
+	top: 5px;
+}
+
+.pricetop {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/price.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 140px;
+	height: 60px;
+	left: 910px;
+	top: 5px;
+}
+
+.pricetop:hover {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/price2.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 140px;
+	height: 60px;
+	left: 910px;
+	top: 5px;
+}
+
+.pricetopOff {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/price3.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 140px;
+	height: 60px;
+	left: 910px;
+	top: 5px;
+}
+
 .send {
 	display: block;
 	display: flex;
@@ -319,7 +387,7 @@
 	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 910px;
+	left: 770px;
 	top: 5px;
 }
 
@@ -336,7 +404,7 @@
 	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 910px;
+	left: 770px;
 	top: 5px;
 }
 
@@ -353,7 +421,7 @@
 	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 910px;
+	left: 770px;
 	top: 5px;
 }
 
@@ -370,7 +438,7 @@
 	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 770px;
+	left: 630px;
 	top: 5px;
 }
 
@@ -387,7 +455,7 @@
 	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 770px;
+	left: 630px;
 	top: 5px;
 }
 
@@ -404,7 +472,7 @@
 	position: absolute;
 	width: 140px;
 	height: 60px;
-	left: 770px;
+	left: 630px;
 	top: 5px;
 }
 
@@ -1506,6 +1574,240 @@
 	left: 455px;
 	top: 420px;
    }
+
+.marketprice {
+	display: block;
+	display: flex;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/marketprice.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 1005px;
+	height: 450px;
+	left: 170px;
+	top: 80px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 22px;
+    margin: .4rem;
+    width: 170px;
+    height: 170px;
+    border-radius: 24px;
+    border: 1px solid #000000;
+    box-shadow: rgb(0 0 0 / 12%) 0px 8px 24px;
+    text-align: center;
+	background-color: #E0E0E0;
+	float: left;
+}
+
+.card:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 8px 24px;
+}
+
+.coinname {
+	font-size: 13px;
+}
+
+.lastprice {
+	font-size: 15px;
+}
+
+.green {
+    color: #009900;
+	font-size: 25px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.red {
+    color: #ff0000;
+	font-size: 25px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.icon {
+	font-size: 25px;
+    margin: auto;
+    padding-top: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {
+	display: block;
+	position: absolute;
+	font-family: font1;
+	font-size: 15px;
+	color: #000000;
+	left: 30px;
+	top: 65px;
+}
+
+.img1 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/mina-protocol.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 65px;
+	top: 15px;
+}
+
+.img2 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/bitcoin.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 250px;
+	top: 15px;
+}
+
+.img3 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/ethereum.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 430px;
+	top: 15px;
+}
+
+.img4 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/Tether.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 610px;
+	top: 15px;
+}
+
+.img5 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/bnb.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 795px;
+	top: 15px;
+}
+
+.img6 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/USD_Coin.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 65px;
+	top: 200px;
+}
+
+.img7 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/dogecoin.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 250px;
+	top: 200px;
+}
+
+.img8 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/matic-token-icon.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 430px;
+	top: 200px;
+}
+
+.img9 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/litecoin.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 610px;
+	top: 200px;
+}
+
+.img10 {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url("../images/aptos.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 795px;
+	top: 200px;
+}
 
 @media (max-width: 600px) {
 }
