@@ -1817,9 +1817,11 @@
 
 @media only screen and (min-width: 1900px) {
 
-.Home_main__nLjiQ {
-	transform: scale(1.41, 1.41);
-	transform-origin: 0 0;
+.Home_title__T09hD {
+	width: calc(1.41 * 400px);
+	height: calc(1.41 * 220px);
+	left: calc(1.41 * 480px);
+	top: calc(1.41 * 75px);
 }
 
 }
