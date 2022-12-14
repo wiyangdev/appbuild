@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 
 }
 
@@ -31,7 +32,7 @@
 	width: 400px;
 	height: 220px;
 	left: 480px;
-	top: 75px;	
+	top: 75px;
 }
 
 .kiri {
@@ -541,7 +542,7 @@
 	width: 80px;
 	height: 80px;
 	left: 500px;
-	top: 530px;
+	bottom: 15px;
 }
 
 .fb:hover {
@@ -558,7 +559,7 @@
 	width: 80px;
 	height: 80px;
 	left: 500px;
-	top: 530px;
+	bottom: 15px;
 }
 
 .dc {
@@ -575,7 +576,7 @@
 	width: 80px;
 	height: 80px;
 	left: 600px;
-	top: 530px;
+	bottom: 15px;
 }
 
 .dc:hover {
@@ -592,7 +593,7 @@
 	width: 80px;
 	height: 80px;
 	left: 600px;
-	top: 530px;
+	bottom: 15px;
 }
 
 .github {
@@ -609,7 +610,7 @@
 	width: 80px;
 	height: 80px;
 	left: 700px;
-	top: 530px;
+	bottom: 15px;
 }
 
 .github:hover {
@@ -626,7 +627,7 @@
 	width: 80px;
 	height: 80px;
 	left: 700px;
-	top: 530px;
+	bottom: 15px;
 }
 
 .tele {
@@ -643,7 +644,7 @@
 	width: 80px;
 	height: 80px;
 	left: 800px;
-	top: 530px;
+	bottom: 15px;
 }
 
 .tele:hover {
@@ -659,8 +660,7 @@
 	position: absolute;
 	width: 80px;
 	height: 80px;
-	left: 800px;
-	top: 530px;
+	bottom: 15px;
 }
 
 .blocking {
@@ -1815,3 +1815,13 @@
 @media (prefers-color-scheme: dark) {
 
 }
+
+@media only screen and (min-width: 1900px) {
+
+.title {
+	transform: scale(1.41);
+	transform-origin: 0 0;
+}
+
+}
+
