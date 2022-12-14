@@ -28,10 +28,10 @@
 	background-image: url("../images/title.png");
 	background-repeat: no-repeat;
 	position: absolute;
-	width: 400px;
-	height: 220px;
-	left: 480px;
-	top: 75px;
+	width: calc(1.41 * 400px);
+	height: calc(1.41 * 220px);
+	left: calc(1.41 * 480px);
+	top: calc(1.41 * 75px);
 }
 
 .kiri {
@@ -1817,10 +1817,6 @@
 
 @media only screen and (min-width: 1900px) {
 
-.main {
-	transform: scale(1.41, 1.41);
-	transform-origin: 0 0;
-}
 
 }
 
