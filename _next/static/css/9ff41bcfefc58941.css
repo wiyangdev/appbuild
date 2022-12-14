@@ -31,7 +31,7 @@
 	width: 400px;
 	height: 220px;
 	left: 480px;
-	top: 75px;
+	bottom: 330px;
 }
 
 .Home_kiri__qjDW3 {
@@ -82,7 +82,7 @@
 	width: 140px;
 	height: 140px;
 	left: 780px;
-	top: 150px;
+	bottom: 335px;
 }
 
 .Home_fly__4fBFR {
@@ -99,7 +99,7 @@
 	width: 160px;
 	height: 320px;
 	left: 100px;
-	top: 100px;
+	bottom: 200px;
 }
 
 .Home_ijo__663mX {
@@ -116,7 +116,7 @@
 	width: 160px;
 	height: 180px;
 	left: 1080px;
-	top: 190px;
+	bottom: 260px;
 }
 
 .Home_walk__CDZrL {
@@ -133,7 +133,7 @@
 	width: 160px;
 	height: 40px;
 	left: 610px;
-	top: 305px;
+	bottom: 280px;
 }
 
 .Home_connect__lnU7w {
@@ -150,7 +150,7 @@
 	width: 160px;
 	height: 70px;
 	left: 610px;
-	top: 340px;
+	bottom: 215px;
 }
 
 .Home_connect__lnU7w:hover {
@@ -167,7 +167,7 @@
 	width: 160px;
 	height: 70px;
 	left: 610px;
-	top: 340px;
+	bottom: 215px;
 }
 
 .Home_connectOff__Mf3ho {
@@ -184,7 +184,7 @@
 	width: 160px;
 	height: 70px;
 	left: 610px;
-	top: 340px;
+	bottom: 215px;
 }
 
 .Home_connected__VKUQn {
@@ -201,7 +201,7 @@
 	width: 160px;
 	height: 70px;
 	left: 610px;
-	top: 340px;
+	bottom: 215px;
 }
 
 .Home_connect2__rcf4I {
@@ -1861,10 +1861,6 @@ a {
 }
 
 @media only screen and (min-width: 1900px) {
-
-body, html {
-
-}
 
 }
 
