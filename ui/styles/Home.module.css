@@ -1819,7 +1819,8 @@
 @media only screen and (min-width: 1900px) {
 
 .title {
-	transform: scale(1.41);
+	transform: scale(1.41, 1.41);
+
 }
 
 }
