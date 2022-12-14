@@ -1861,12 +1861,5 @@ a {
 	}
 }
 
-@media only screen and (min-width: 1900px) {
 
-body, html {
-	transform: scale(1.188);
-	transform-origin: 0 0;
-}
-
-}
 
