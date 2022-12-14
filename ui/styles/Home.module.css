@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
 }
 
 .footer {
@@ -1818,9 +1817,9 @@
 
 @media only screen and (min-width: 1900px) {
 
-.title {
-	transform: scale(1.41, 1.41) translate(41%, 41%);
-
+.main {
+	transform: scale(1.41, 1.41);
+	transform-origin: 0 0;
 }
 
 }
