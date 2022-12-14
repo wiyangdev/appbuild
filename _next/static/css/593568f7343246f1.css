@@ -2307,7 +2307,6 @@
 }
 
 .Home_inputfee__zu57Z {
-	color: black;
 	width: calc(1.41 * 320px);
 	left: calc(1.41 * 530px);
 	top: calc(1.41 * 190px);
@@ -2321,7 +2320,6 @@
 }
 
 .Home_inputmemo__PfYjf {
-	color: black;
 	width: calc(1.41 * 320px);
 	left: calc(1.41 * 530px);
 	top: calc(1.41 * 250px);
@@ -2453,11 +2451,13 @@
 	top: calc(1.41 * 415px);
 }
 
+@font-face { font-family: font1; src: url(/appbuild/_next/static/media/font1.e2f3cfa0.ttf); } 
 .Home_addres__PrrqD {
-	font-size: 13px);
+	font-size: calc(1.41 * 13px);
+	text-shadow: -1.41px -1.41px 0 #000, 1.41px -1.41px 0 #000, -1.41px 1.41px 0 #000, 1.41px 1.41px 0 #000;
 	left: calc(1.41 * 455px);
 	top: calc(1.41 * 420px);
-}
+   }
 
 .Home_marketprice__qCMpw {
 	width: calc(1.41 * 1005px);
@@ -2467,17 +2467,17 @@
 }
 
 .Home_card___LpL1 {
-    padding: 17px 31px;
-    margin: .5.41rem;
+    padding: calc(1.41 * 12px) calc(1.41 * 22px);
+    margin: calc(1.41 * .4rem);
     width: calc(1.41 * 170px);
     height: calc(1.41 * 170px);
-    border-radius: 33.9px;
+    border-radius: calc(1.41 * 24px);
     border: 1.41px solid #000000;
-    box-shadow: rgb(0 0 0 / 12%) 0px 11.3px 33.9px;
+    box-shadow: rgb(0 0 0 / 12%) 0px calc(1.41 * 8px) calc(1.41 * 24px);
 }
 
 .Home_card___LpL1:hover {
-    box-shadow: rgb(0 0 0 / 20%) 0px 11.3px 33.9px;
+    box-shadow: rgb(0 0 0 / 20%) 0px calc(1.41 * 8px) calc(1.41 * 24px);
 }
 
 .Home_coinname__yU6Iv {
@@ -2490,10 +2490,12 @@
 
 .Home_green__g8l_e {
 	font-size: calc(1.41 * 25px);
+	text-shadow: -1.41px -1.41px 0 #000, 1.41px -1.41px 0 #000, -1.41px 1.41px 0 #000, 1.41px 1.41px 0 #000;
 }
 
 .Home_red__H_jTz {
 	font-size: calc(1.41 * 25px);
+	text-shadow: -1.41px -1.41px 0 #000, 1.41px -1.41px 0 #000, -1.41px 1.41px 0 #000, 1.41px 1.41px 0 #000;
 }
 
 .Home_icon__qn8Vn {
