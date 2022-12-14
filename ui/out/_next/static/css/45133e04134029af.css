@@ -32,7 +32,7 @@
 	width: 400px;
 	height: 220px;
 	left: 480px;
-	top: 75px;	
+	top: 75px;
 }
 
 .Home_kiri__qjDW3 {
@@ -1816,6 +1816,14 @@
 
 }
 
+@media only screen and (min-width: 1900px) {
+
+.Home_title__T09hD {
+	transform: scale(1.41);
+	transform-origin: 0 0;
+}
+
+}
 
 
 body, html {
@@ -1824,9 +1832,6 @@ body, html {
     background: url(/appbuild/_next/static/media/bg.7a45e65a.png) no-repeat center center fixed;
     background-size: 100% 100%;
 	position: absolute;
-	transform: scale(1);
-   transform-origin: 0 0;
-
 }
 
 a {
