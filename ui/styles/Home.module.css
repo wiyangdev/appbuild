@@ -31,7 +31,7 @@
 	width: 400px;
 	height: 220px;
 	left: 480px;
-	bottom: 330px;
+	top: 75px;
 }
 
 .kiri {
@@ -82,7 +82,7 @@
 	width: 140px;
 	height: 140px;
 	left: 780px;
-	bottom: 335px;
+	top: 150px;
 }
 
 .fly {
@@ -99,7 +99,7 @@
 	width: 160px;
 	height: 320px;
 	left: 100px;
-	bottom: 200px;
+	top: 100px;
 }
 
 .ijo {
@@ -116,7 +116,7 @@
 	width: 160px;
 	height: 180px;
 	left: 1080px;
-	bottom: 260px;
+	top: 190px;
 }
 
 .walk {
@@ -133,7 +133,7 @@
 	width: 160px;
 	height: 40px;
 	left: 610px;
-	bottom: 280px;
+	top: 305px;
 }
 
 .connect {
@@ -150,7 +150,7 @@
 	width: 160px;
 	height: 70px;
 	left: 610px;
-	bottom: 215px;
+	top: 340px;
 }
 
 .connect:hover {
@@ -167,7 +167,7 @@
 	width: 160px;
 	height: 70px;
 	left: 610px;
-	bottom: 215px;
+	top: 340px;
 }
 
 .connectOff {
@@ -184,7 +184,7 @@
 	width: 160px;
 	height: 70px;
 	left: 610px;
-	bottom: 215px;
+	top: 340px;
 }
 
 .connected {
@@ -201,7 +201,7 @@
 	width: 160px;
 	height: 70px;
 	left: 610px;
-	bottom: 215px;
+	top: 340px;
 }
 
 .connect2 {
