@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-
 }
 
 .Home_footer____T7K {
@@ -1818,9 +1817,9 @@
 
 @media only screen and (min-width: 1900px) {
 
-.Home_title__T09hD {
-	transform: scale(1.41, 1.41) translate(41%, 41%);
-
+.Home_main__nLjiQ {
+	transform: scale(1.41, 1.41);
+	transform-origin: 0 0;
 }
 
 }
@@ -1861,5 +1860,11 @@ a {
 	}
 }
 
+@media only screen and (min-width: 1900px) {
 
+body, html {
+
+}
+
+}
 
