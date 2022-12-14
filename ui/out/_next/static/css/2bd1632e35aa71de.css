@@ -1816,12 +1816,24 @@
 
 }
 
+@media only screen and (min-width: 1900px) {
+	
+.Home_title__T09hD {
+	width: 564px;
+	height: 310px;
+	left: 676px;
+	top: 105px;	
+}
+
+}
+
 body, html {
 	padding: 0;
 	margin: 0;
     background: url(/appbuild/_next/static/media/bg.7a45e65a.png) no-repeat center center fixed;
     background-size: 100% 100%;
 	position: absolute;
+
 }
 
 a {
