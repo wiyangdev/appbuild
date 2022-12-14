@@ -1824,5 +1824,758 @@
 	top: calc(1.41 * 75px);
 }
 
+.kiri {
+	width: calc(1.41 * 240px);
+	height: calc(1.41 * 215px);
+	left: calc(1.41 * 10px);
+	bottom: calc(1.41 * 15px);
+}
+
+.kanan {
+	width: calc(1.41 * 240px);
+	height: calc(1.41 * 215px);
+	left: calc(1.41 * 1100px);
+	bottom: calc(1.41 * 15px);
+}
+
+.gantung {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 140px);
+	left: calc(1.41 * 780px);
+	top: calc(1.41 * 150px);
+}
+
+.fly {
+	width: calc(1.41 * 160px);
+	height: calc(1.41 * 320px);
+	left: calc(1.41 * 100px);
+	top: calc(1.41 * 100px);
+}
+
+.ijo {
+	width: calc(1.41 * 160px);
+	height: calc(1.41 * 180px);
+	left: calc(1.41 * 1080px);
+	top: calc(1.41 * 190px);
+}
+
+.walk {
+	width: calc(1.41 * 160px);
+	height: calc(1.41 * 40px);
+	left: calc(1.41 * 610px);
+	top: calc(1.41 * 305px);
+}
+
+.connect {
+	width: calc(1.41 * 160px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 610px);
+	top: calc(1.41 * 340px);
+}
+
+.connect:hover {
+	width: calc(1.41 * 160px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 610px);
+	top: calc(1.41 * 340px);
+}
+
+.connectOff {
+	width: calc(1.41 * 160px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 610px);
+	top: calc(1.41 * 340px);
+}
+
+.connected {
+	width: calc(1.41 * 160px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 610px);
+	top: calc(1.41 * 340px);
+}
+
+.connect2 {
+	width: calc(1.41 * 120px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 1200px);
+	top: calc(1.41 * 10px);
+}
+
+.connect2:hover {
+	width: calc(1.41 * 120px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 1200px);
+	top: calc(1.41 * 10px);
+}
+
+.connectOff2 {
+	width: calc(1.41 * 120px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 1200px);
+	top: calc(1.41 * 10px);
+}
+
+.connected2 {
+	width: calc(1.41 * 120px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 1200px);
+	top: calc(1.41 * 10px);
+}
+
+.faucettop {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 1050px);
+	top: calc(1.41 * 5px);
+}
+
+.faucettop:hover {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 1050px);
+	top: calc(1.41 * 5px);
+}
+
+.faucettopOff {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 1050px);
+	top: calc(1.41 * 5px);
+}
+
+.pricetop {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 910px);
+	top: calc(1.41 * 5px);
+}
+
+.pricetop:hover {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 910px);
+	top: calc(1.41 * 5px);
+}
+
+.pricetopOff {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 910px);
+	top: calc(1.41 * 5px);
+}
+
+.send {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 770px);
+	top: calc(1.41 * 5px);
+}
+
+.send:hover {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 770px);
+	top: calc(1.41 * 5px);
+}
+
+.sendOff {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 770px);
+	top: calc(1.41 * 5px);
+}
+
+.hometop {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 630px);
+	top: calc(1.41 * 5px);
+}
+
+.hometop:hover {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 630px);
+	top: calc(1.41 * 5px);
+}
+
+.hometopOff {
+	width: calc(1.41 * 140px);
+	height: calc(1.41 * 60px);
+	left: calc(1.41 * 630px);
+	top: calc(1.41 * 5px);
+}
+
+.sendscreen {
+	width: calc(1.41 * 430px);
+	height: calc(1.41 * 430px);
+	left: calc(1.41 * 470px);
+	top: calc(1.41 * 85px);
+}
+
+.head {
+	width: calc(1.41 * 110px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 10px);
+	top: calc(1.41 * 10px);
+}
+
+.head:hover {
+	width: calc(1.41 * 110px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 10px);
+	top: calc(1.41 * 10px);
+}
+
+.fb {
+	width: calc(1.41 * 80px);
+	height: calc(1.41 * 80px);
+	left: calc(1.41 * 500px);
+	bottom: calc(1.41 * 15px);
+}
+
+.fb:hover {
+	width: calc(1.41 * 80px);
+	height: calc(1.41 * 80px);
+	left: calc(1.41 * 500px);
+	bottom: calc(1.41 * 15px);
+}
+
+.dc {
+	width: calc(1.41 * 80px);
+	height: calc(1.41 * 80px);
+	left: calc(1.41 * 600px);
+	bottom: calc(1.41 * 15px);
+}
+
+.dc:hover {
+	width: calc(1.41 * 80px);
+	height: calc(1.41 * 80px);
+	left: calc(1.41 * 600px);
+	bottom: calc(1.41 * 15px);
+}
+
+.github {
+	width: calc(1.41 * 80px);
+	height: calc(1.41 * 80px);
+	left: calc(1.41 * 700px);
+	bottom: calc(1.41 * 15px);
+}
+
+.github:hover {
+	width: calc(1.41 * 80px);
+	height: calc(1.41 * 80px);
+	left: calc(1.41 * 700px);
+	bottom: calc(1.41 * 15px);
+}
+
+.tele {
+	width: calc(1.41 * 80px);
+	height: calc(1.41 * 80px);
+	left: calc(1.41 * 800px);
+	bottom: calc(1.41 * 15px);
+}
+
+.tele:hover {
+	width: calc(1.41 * 80px);
+	height: calc(1.41 * 80px);
+	bottom: calc(1.41 * 15px);
+}
+
+.blocking {
+	width: calc(1.41 * 1350px);
+	height: calc(1.41 * 900px);
+	left: calc(1.41 * 0px);
+	top: calc(1.41 * 0px);
+}
+
+.closebtn {
+	width: calc(1.41 * 70px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 930px);
+	top: calc(1.41 * 210px);
+}
+
+.closebtn:hover {
+	width: calc(1.41 * 70px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 930px);
+	top: calc(1.41 * 210px);
+}
+
+.refreshbtn {
+	width: calc(1.41 * 70px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 930px);
+	top: calc(1.41 * 210px);
+}
+
+.refreshbtn:hover {
+	width: calc(1.41 * 70px);
+	height: calc(1.41 * 70px);
+	left: calc(1.41 * 930px);
+	top: calc(1.41 * 210px);
+}
+
+.loadback {
+	width: calc(1.41 * 275px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 450px);
+}
+
+.bar1 {
+	width: calc(1.41 * 275px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 450px);
+}
+
+.bar2 {
+	width: calc(1.41 * 275px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 450px);
+}
+
+.bar3 {
+	width: calc(1.41 * 275px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 450px);
+}
+
+.bar4 {
+	width: calc(1.41 * 275px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 450px);
+}
+
+.bar5 {
+	width: calc(1.41 * 275px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 450px);
+}
+
+.bar6 {
+	width: calc(1.41 * 275px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 450px);
+}
+
+.bar7 {
+	width: calc(1.41 * 275px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 450px);
+}
+
+.hey {
+	width: calc(1.41 * 100px);
+	height: calc(1.41 * 100px);
+	left: calc(1.41 * 425px);
+	top: calc(1.41 * 440px);
+}
+
+.sorry {
+	width: calc(1.41 * 110px);
+	height: calc(1.41 * 100px);
+	left: calc(1.41 * 395px);
+	top: calc(1.41 * 450px);
+}
+
+.yey {
+	width: calc(1.41 * 120px);
+	height: calc(1.41 * 100px);
+	left: calc(1.41 * 420px);
+	top: calc(1.41 * 440px);
+}
+
+.checktxt {
+	width: calc(1.41 * 120px);
+	height: calc(1.41 * 25px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 310px);
+}
+
+.checkload {
+	width: calc(1.41 * 35px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 305px);
+}
+
+.checkv {
+	width: calc(1.41 * 30px);
+	height: calc(1.41 * 30px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 305px);
+}
+
+.connectingtxt {
+	width: calc(1.41 * 150px);
+	height: calc(1.41 * 25px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 340px);
+}
+
+.connectload {
+	width: calc(1.41 * 35px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 335px);
+}
+
+.connectv {
+	width: calc(1.41 * 30px);
+	height: calc(1.41 * 30px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 335px);
+}
+
+.validatingtxt {
+	width: calc(1.41 * 150px);
+	height: calc(1.41 * 25px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 370px);
+}
+
+.validatingload {
+	width: calc(1.41 * 35px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 365px);
+}
+
+.validatingv {
+	width: calc(1.41 * 30px);
+	height: calc(1.41 * 30px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 365px);
+}
+
+.connectedtxt {
+	width: calc(1.41 * 150px);
+	height: calc(1.41 * 25px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 400px);
+}
+
+.connectedv {
+	width: calc(1.41 * 30px);
+	height: calc(1.41 * 30px);
+	left: calc(1.41 * 550px);
+	top: calc(1.41 * 395px);
+}
+
+.gotosendtxt {
+	width: calc(1.41 * 160px);
+	height: calc(1.41 * 25px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 520px);
+}
+
+.walletnotfoundtxt {
+	width: calc(1.41 * 310px);
+	height: calc(1.41 * 180px);
+	left: calc(1.41 * 540px);
+	top: calc(1.41 * 305px);
+}
+
+.clickheretxt {
+	width: calc(1.41 * 180px);
+	height: calc(1.41 * 25px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 490px);
+}
+
+.nofundtxt {
+	width: calc(1.41 * 310px);
+	height: calc(1.41 * 180px);
+	left: calc(1.41 * 540px);
+	top: calc(1.41 * 305px);
+}
+
+.feetxt {
+	width: calc(1.41 * 180px);
+	height: calc(1.41 * 25px);
+	left: calc(1.41 * 520px);
+	top: calc(1.41 * 160px);
+}
+
+.inputfee {
+	color: black;
+	width: calc(1.41 * 320px);
+	left: calc(1.41 * 530px);
+	top: calc(1.41 * 190px);
+}
+
+.memotxt {
+	width: calc(1.41 * 180px);
+	height: calc(1.41 * 25px);
+	left: calc(1.41 * 530px);
+	top: calc(1.41 * 220px);
+}
+
+.inputmemo {
+	color: black;
+	width: calc(1.41 * 320px);
+	left: calc(1.41 * 530px);
+	top: calc(1.41 * 250px);
+}
+
+.submitsend {
+	width: calc(1.41 * 120px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 630px);
+	top: calc(1.41 * 450px);
+}
+
+.submitsend:hover {
+	width: calc(1.41 * 120px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 630px);
+	top: calc(1.41 * 450px);
+}
+
+.submitsendOff {
+	width: calc(1.41 * 120px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 630px);
+	top: calc(1.41 * 450px);
+}
+
+.send1txt {
+	width: calc(1.41 * 180px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 285px);
+}
+
+.send1load {
+	width: calc(1.41 * 35px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 555px);
+	top: calc(1.41 * 278px);
+}
+
+.send1v {
+	width: calc(1.41 * 20px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 563px);
+	top: calc(1.41 * 285px);
+}
+
+.send2txt {
+	width: calc(1.41 * 180px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 310px);
+}
+
+.send2load {
+	width: calc(1.41 * 35px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 555px);
+	top: calc(1.41 * 303px);
+}
+
+.send2v {
+	width: calc(1.41 * 20px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 563px);
+	top: calc(1.41 * 310px);
+}
+
+.send3txt {
+	width: calc(1.41 * 180px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 335px);
+}
+
+.send3load {
+	width: calc(1.41 * 35px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 555px);
+	top: calc(1.41 * 328px);
+}
+
+.send3v {
+	width: calc(1.41 * 20px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 563px);
+	top: calc(1.41 * 335px);
+}
+
+.send4txt {
+	width: calc(1.41 * 180px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 360px);
+}
+
+.send4load {
+	width: calc(1.41 * 35px);
+	height: calc(1.41 * 35px);
+	left: calc(1.41 * 555px);
+	top: calc(1.41 * 353px);
+}
+
+.send4v {
+	width: calc(1.41 * 20px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 563px);
+	top: calc(1.41 * 360px);
+}
+
+.send5txt {
+	width: calc(1.41 * 180px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 385px);
+}
+
+.send5v {
+	width: calc(1.41 * 20px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 563px);
+	top: calc(1.41 * 385px);
+}
+
+.detailsend {
+	width: calc(1.41 * 180px);
+	height: calc(1.41 * 20px);
+	left: calc(1.41 * 600px);
+	top: calc(1.41 * 415px);
+}
+
+.addres {
+	font-size: 13px);
+	left: calc(1.41 * 455px);
+	top: calc(1.41 * 420px);
+}
+
+.marketprice {
+	width: calc(1.41 * 1005px);
+	height: calc(1.41 * 450px);
+	left: calc(1.41 * 170px);
+	top: calc(1.41 * 80px);
+}
+
+.card {
+    padding: 17px 31px;
+    margin: .5.41rem;
+    width: calc(1.41 * 170px);
+    height: calc(1.41 * 170px);
+    border-radius: 33.9px;
+    border: 1.41px solid #000000;
+    box-shadow: rgb(0 0 0 / 12%) 0px 11.3px 33.9px;
+}
+
+.card:hover {
+    box-shadow: rgb(0 0 0 / 20%) 0px 11.3px 33.9px;
+}
+
+.coinname {
+	font-size: calc(1.41 * 13px);
+}
+
+.lastprice {
+	font-size: calc(1.41 * 15px);
+}
+
+.green {
+	font-size: calc(1.41 * 25px);
+}
+
+.red {
+	font-size: calc(1.41 * 25px);
+}
+
+.icon {
+	font-size: calc(1.41 * 25px);
+    padding-top: calc(1.41 * 6px);
+}
+
+.list {
+	font-size: calc(1.41 * 15px);
+	left: calc(1.41 * 30px);
+	top: calc(1.41 * 65px);
+}
+
+.img1 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 65px);
+	top: calc(1.41 * 15px);
+}
+
+.img2 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 250px);
+	top: calc(1.41 * 15px);
+}
+
+.img3 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 430px);
+	top: calc(1.41 * 15px);
+}
+
+.img4 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 610px);
+	top: calc(1.41 * 15px);
+}
+
+.img5 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 795px);
+	top: calc(1.41 * 15px);
+}
+
+.img6 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 65px);
+	top: calc(1.41 * 200px);
+}
+
+.img7 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 250px);
+	top: calc(1.41 * 200px);
+}
+
+.img8 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 430px);
+	top: calc(1.41 * 200px);
+}
+
+.img9 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 610px);
+	top: calc(1.41 * 200px);
+}
+
+.img10 {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	left: calc(1.41 * 795px);
+	top: calc(1.41 * 200px);
+}
+
 }
 

@@ -5,28 +5,80 @@ import styles from '../styles/Home.module.css';
 
 const CoinPrice = () => {
 
-    const [data, setData] = useState(null)
-    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=mina-protocol%2C%20bitcoin%2C%20ethereum%2C%20tether%2C%20binancecoin%2C%20usd-coin%2C%20dogecoin%2C%20matic-network%2C%20litecoin%2C%20aptos&order=market_cap_desc&per_page=100&page=1&sparkline=false'
-	
+    const [coin1, setCoin1] = useState(null)
+	const [coin2, setCoin2] = useState(null)
+	const [coin3, setCoin3] = useState(null)
+	const [coin4, setCoin4] = useState(null)
+	const [coin5, setCoin5] = useState(null)
+	const [coin6, setCoin6] = useState(null)
+	const [coin7, setCoin7] = useState(null)
+	const [coin8, setCoin8] = useState(null)
+	const [coin9, setCoin9] = useState(null)
+	const [coin10, setCoin10] = useState(null)
+
     useEffect(() => {
-		axios.get(url).then((response) => {
-				setData(response.data)
-			}).catch((error) => {	
-		})
+		
+		const api1 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=mina-protocol&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		const api2 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=bitcoin&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		const api3 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		const api4 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=tether&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		const api5 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=binancecoin&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		const api6 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=usd-coin&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		const api7 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=dogecoin&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		const api8 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=matic-network&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		const api9 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=litecoin&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		const api10 = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=aptos&order=market_cap_desc&per_page=1&page=1&sparkline=false'
+		
+		const getApi1 = axios.get(api1);
+		const getApi2 = axios.get(api2);
+		const getApi3 = axios.get(api3);
+		const getApi4 = axios.get(api4);
+		const getApi5 = axios.get(api5);
+		const getApi6 = axios.get(api6);
+		const getApi7 = axios.get(api7);
+		const getApi8 = axios.get(api8);
+		const getApi9 = axios.get(api9);
+		const getApi10 = axios.get(api10);	
+ 
+		const fetchData = () => {
+		axios.all([getApi1, getApi2, getApi3, getApi4, getApi5, getApi6, getApi7, getApi8, getApi9, getApi10]).then(axios.spread((...responses) => {
+			const dataCoin1 = responses[0]
+			const dataCoin2 = responses[1]
+			const dataCoin3 = responses[2]
+			const dataCoin4 = responses[3]
+			const dataCoin5 = responses[4]
+			const dataCoin6 = responses[5]
+			const dataCoin7 = responses[6]
+			const dataCoin8 = responses[7]
+			const dataCoin9 = responses[8]
+			const dataCoin10 = responses[9]
 			
+			setCoin1(dataCoin1)
+			setCoin2(dataCoin2)
+			setCoin3(dataCoin3)
+			setCoin4(dataCoin4)
+			setCoin5(dataCoin5)
+			setCoin6(dataCoin6)
+			setCoin7(dataCoin7)
+			setCoin8(dataCoin8)
+			setCoin9(dataCoin9)
+			setCoin10(dataCoin10)
+
+		})).catch(errors => {
+			// react on errors.
+		})
+		}
+		
+		fetchData();
+		
 		const interval = setInterval(() => {
-			axios.get(url).then((response) => {
-					setData(response.data)
-				}).catch((error) => {	
-			})
+			fetchData();
 		}, 10000);
 		
 		return () => clearInterval(interval);
     }, [])
 
-    // console.log(data)
-
-    if (!data) return null
+	if (!coin1) return null
 
     return (
 	<div>
@@ -36,19 +88,19 @@ const CoinPrice = () => {
                 <span className={styles.img1} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[9].name}</h5>
-					<p className={styles.lastprice}>${data[9].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin1.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin1.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[9].price_change_percentage_24h < 0 ? (
+				{coin1.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[9].price_change_percentage_24h.toFixed(2)}%
+						{coin1.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[9].price_change_percentage_24h.toFixed(2)}%
+							{coin1.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
@@ -57,19 +109,19 @@ const CoinPrice = () => {
                 <span className={styles.img2} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[0].name}</h5>
-					<p className={styles.lastprice}>${data[0].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin2.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin2.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[0].price_change_percentage_24h < 0 ? (
+				{coin2.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[0].price_change_percentage_24h.toFixed(2)}%
+						{coin2.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[0].price_change_percentage_24h.toFixed(2)}%
+							{coin2.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
@@ -78,19 +130,19 @@ const CoinPrice = () => {
                 <span className={styles.img3} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[1].name}</h5>
-					<p className={styles.lastprice}>${data[1].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin3.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin3.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[1].price_change_percentage_24h < 0 ? (
+				{coin3.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[1].price_change_percentage_24h.toFixed(2)}%
+						{coin3.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[1].price_change_percentage_24h.toFixed(2)}%
+							{coin3.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
@@ -99,19 +151,19 @@ const CoinPrice = () => {
                 <span className={styles.img4} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[2].name}</h5>
-					<p className={styles.lastprice}>${data[2].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin4.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin4.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[2].price_change_percentage_24h < 0 ? (
+				{coin4.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[2].price_change_percentage_24h.toFixed(2)}%
+						{coin4.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[2].price_change_percentage_24h.toFixed(2)}%
+							{coin4.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
@@ -120,19 +172,19 @@ const CoinPrice = () => {
                 <span className={styles.img5} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[3].name}</h5>
-					<p className={styles.lastprice}>${data[3].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin5.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin5.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[3].price_change_percentage_24h < 0 ? (
+				{coin5.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[3].price_change_percentage_24h.toFixed(2)}%
+						{coin5.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[3].price_change_percentage_24h.toFixed(2)}%
+							{coin5.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
@@ -141,19 +193,19 @@ const CoinPrice = () => {
                 <span className={styles.img6} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[4].name}</h5>
-					<p className={styles.lastprice}>${data[4].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin6.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin6.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[4].price_change_percentage_24h < 0 ? (
+				{coin6.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[4].price_change_percentage_24h.toFixed(2)}%
+						{coin6.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[4].price_change_percentage_24h.toFixed(2)}%
+							{coin6.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
@@ -162,19 +214,19 @@ const CoinPrice = () => {
                 <span className={styles.img7} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[5].name}</h5>
-					<p className={styles.lastprice}>${data[5].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin7.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin7.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[5].price_change_percentage_24h < 0 ? (
+				{coin7.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[5].price_change_percentage_24h.toFixed(2)}%
+						{coin7.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[5].price_change_percentage_24h.toFixed(2)}%
+							{coin7.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
@@ -183,19 +235,19 @@ const CoinPrice = () => {
                 <span className={styles.img8} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[6].name}</h5>
-					<p className={styles.lastprice}>${data[6].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin8.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin8.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[6].price_change_percentage_24h < 0 ? (
+				{coin8.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[6].price_change_percentage_24h.toFixed(2)}%
+						{coin8.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[6].price_change_percentage_24h.toFixed(2)}%
+							{coin8.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
@@ -204,19 +256,19 @@ const CoinPrice = () => {
                 <span className={styles.img9} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[7].name}</h5>
-					<p className={styles.lastprice}>${data[7].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin9.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin9.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[7].price_change_percentage_24h < 0 ? (
+				{coin9.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[7].price_change_percentage_24h.toFixed(2)}%
+						{coin9.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[7].price_change_percentage_24h.toFixed(2)}%
+							{coin9.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
@@ -225,23 +277,23 @@ const CoinPrice = () => {
                 <span className={styles.img10} />
 				<p></p>
 				<div>
-					<h5 className={styles.coinname}>{data[8].name}</h5>
-					<p className={styles.lastprice}>${data[8].current_price.toLocaleString()}</p>
+					<h5 className={styles.coinname}>{coin10.data[0].name}</h5>
+					<p className={styles.lastprice}>${coin10.data[0].current_price.toLocaleString()}</p>
 				</div>
 
-				{data[8].price_change_percentage_24h < 0 ? (
+				{coin10.data[0].price_change_percentage_24h < 0 ? (
 					<span className={styles.red}>
 						<FiArrowDown className={styles.icon} />
-						{data[8].price_change_percentage_24h.toFixed(2)}%
+						{coin10.data[0].price_change_percentage_24h.toFixed(2)}%
 					</span>
 				) : (
 						<span className={styles.green}>
 							<FiArrowUpRight className={styles.icon} />
-							{data[8].price_change_percentage_24h.toFixed(2)}%
+							{coin10.data[0].price_change_percentage_24h.toFixed(2)}%
 						</span>
 					)}
 			</div>
-		
+
 		</div>
 	</div>
     )
