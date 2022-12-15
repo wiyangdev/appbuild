@@ -18,6 +18,147 @@ a {
   box-sizing: border-box;
 }
 
+.mina-protocol {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/mina-protocol.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+}
+
+.bitcoin {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/bitcoin.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+
+}
+
+.ethereum {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/ethereum.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+}
+
+.tether {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/Tether.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+}
+
+.binancecoin {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/bnb.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+}
+
+.usd-coin {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/USD_Coin.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+}
+
+.dogecoin {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/dogecoin.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+}
+
+.matic-network {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/matic-token-icon.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+}
+
+.litecoin {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/litecoin.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+}
+
+.aptos {
+	display: block;
+	background-size: cover;
+	align-items: center;
+	justify-content: center;
+	margin-right: auto;
+	background-image: url("../images/aptos.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	margin-left: 38px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -40,5 +181,66 @@ a {
 }
 
 @media only screen and (min-width: 1900px) {
+
+.mina-protocol {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+}
+
+.bitcoin {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+
+}
+
+.ethereum {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+}
+
+.tether {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+}
+
+.binancecoin {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+}
+
+.usd-coin {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+}
+
+.dogecoin {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+}
+
+.matic-network {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+}
+
+.litecoin {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+}
+
+.aptos {
+	width: calc(1.41 * 50px);
+	height: calc(1.41 * 50px);
+	margin-left: calc(1.41 * 38px);
+}
 
 }
